@@ -6,17 +6,21 @@ For numbers which are multiples of both three and five print "ThreeFive".
 """
 
 
-def three_five():
+def three_five(num):
+    if num % 3 == 0 and num % 5 == 0:
+        return "ThreeFive"
+    elif num % 3 == 0:
+        return "Three"
+    elif num % 5 == 0:
+        return "Five"
+    else:
+        return num
+
+
+def main():
     for i in range(1, 101):
-        if i % 3 == 0 and i % 5 == 0:
-            print("ThreeFive")
-        elif i % 3 == 0:
-            print("Three")
-        elif i % 5 == 0:
-            print("Five")
-        else:
-            print(i)
+        print(three_five(i))
 
 
 if __name__ == "__main__":
-    three_five()
+    main()
