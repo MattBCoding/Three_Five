@@ -29,6 +29,15 @@ class TestThreeFive(unittest.TestCase):
         self.assertEqual(three_five(60), "ThreeFive")
         self.assertEqual(three_five(75), "ThreeFive")
 
+    def test_other_numbers(self):
+        """Test other numbers print the number"""
+        self.assertEqual(three_five(1), 1)
+        self.assertEqual(three_five(2), 2)
+        self.assertEqual(three_five(4), 4)
+        self.assertEqual(three_five(7), 7)
+        self.assertEqual(three_five(8), 8)
+        self.assertEqual(three_five(11), 11)
+
 
 if __name__ == "__main__":
     unittest.main()
