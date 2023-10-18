@@ -16,11 +16,11 @@ For numbers which are multiples of both three and five print "ThreeFive".
   for Windows:
 
 ```
-py main.py
+py src/main.py
 ```
 
 for Mac or Linux
 
 ```
-python3 main.py
+python3 src/main.py
 ```
